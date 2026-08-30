@@ -24,6 +24,8 @@ body{background:linear-gradient(180deg,#f6f4ed 0,#f0eee6 38%,#f3f1ea 100%)}
 .solution{border-radius:var(--radius-md);overflow:hidden;border:1px solid rgba(255,255,255,.08)}
 .document-art,.mini-art{border-radius:16px}
 .about-visual{border-radius:var(--radius-lg)}
+.about-visual p{z-index:3;max-width:230px;padding:12px 15px;border-radius:12px;background:rgba(246,244,237,.88);backdrop-filter:blur(8px);box-shadow:0 8px 28px rgba(23,32,24,.08)}
+.diagonal{z-index:1}
 .cta{margin:0 14px 14px;border-radius:var(--radius-lg)}
 footer{margin:0 14px 14px;border-radius:24px}
 
@@ -53,7 +55,7 @@ footer{margin:0 14px 14px;border-radius:24px}
   .services{padding:85px 0}.section-head{margin-bottom:38px}.section-head h2,.about h2{font-size:39px;line-height:1.08}.section-head>p{font-size:14px}
   .service{grid-template-columns:34px 1fr 22px;padding:23px 20px;border-radius:17px;gap:6px;background:rgba(255,255,255,.44)}.service:hover{padding:23px 20px;transform:none}.service-num{padding-top:5px}.service h3{font-size:19px;line-height:1.25}.service p{font-size:13px;line-height:1.55}.service>a{font-size:19px}
   .solutions{padding:78px 0}.solution-grid{gap:12px}.solution{min-height:390px;border-radius:18px;padding:21px}.solution h3{font-size:25px}.document-art{height:155px;margin:26px 0}.mini-art{height:170px;margin:28px 0}
-  .about{padding:85px 0}.about-visual{height:325px;border-radius:24px;padding:26px}.about-visual p{left:26px;bottom:24px}.big-year{font-size:145px}.about-copy>p:not(.section-label){font-size:14px}.values{margin-top:30px}
+  .about{padding:85px 0}.about-visual{height:325px;border-radius:24px;padding:26px}.about-visual p{left:20px;right:20px;bottom:20px;max-width:none;margin:0;padding:11px 13px;text-align:left;font-size:10px}.about-visual .diagonal{width:360px;height:82px;right:-155px;bottom:112px;opacity:.88}.big-year{font-size:145px}.about-copy>p:not(.section-label){font-size:14px}.values{margin-top:30px}
   .cta{padding:76px 0}.cta h2{font-size:43px;line-height:1.08;margin-bottom:48px}.cta-email{font-size:19px;gap:15px}.contact-row{gap:28px;margin-top:48px}
   footer{padding:28px 0}footer .wrap{gap:18px}
 }
@@ -62,4 +64,4 @@ footer{margin:0 14px 14px;border-radius:24px}
 
 html[dir="rtl"] .hero-copy{text-align:right}
 @media(max-width:900px){html[dir="rtl"] .hero-copy{text-align:center}}
-@media(max-width:600px){html[dir="rtl"] .about-visual p{right:26px;left:auto}}
+@media(max-width:600px){html[dir="rtl"] .about-visual p{right:20px;left:20px;text-align:right}html[dir="rtl"] .about-visual .diagonal{left:-155px;right:auto}}
