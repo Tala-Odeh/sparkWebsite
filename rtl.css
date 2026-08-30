@@ -1,0 +1,14 @@
+html[dir="rtl"] body{font-family:"Noto Sans Arabic",sans-serif}
+html[dir="rtl"] .nav-links,html[dir="rtl"] .nav-actions,html[dir="rtl"] .brand,html[dir="rtl"] .hero-actions,html[dir="rtl"] .eyebrow,html[dir="rtl"] .scroll-cue{direction:rtl}
+html[dir="rtl"] .brand{direction:ltr}
+html[dir="rtl"] .hero h1,html[dir="rtl"] .section-head h2,html[dir="rtl"] .statement h2,html[dir="rtl"] .about h2,html[dir="rtl"] .cta h2{letter-spacing:-.035em}
+html[dir="rtl"] .card-a{left:auto;right:2%}html[dir="rtl"] .card-b{right:auto;left:-2%}html[dir="rtl"] .card-c{left:auto;right:7%}
+html[dir="rtl"] .coordinate{right:auto;left:2%;direction:ltr;text-align:left}
+html[dir="rtl"] .statement-note{grid-column:2}
+html[dir="rtl"] .service:hover{padding-right:22px;padding-left:22px}
+html[dir="rtl"] .about-visual p{left:auto;right:40px}
+html[dir="rtl"] .diagonal{right:auto;left:-200px;transform:rotate(35deg)}
+html[dir="rtl"] .contact-row,html[dir="rtl"] .solution-grid{text-align:right}
+html[dir="rtl"] .cta-email{direction:ltr}html[dir="rtl"] .cta-email span{transform:scaleX(-1)}
+@media(max-width:900px){.language{display:block}html[dir="rtl"] .statement-note{grid-column:auto}}
+@media(max-width:600px){html[dir="rtl"] .card-a{right:0}html[dir="rtl"] .card-b{left:0}html[dir="rtl"] .card-c{right:2%}}
