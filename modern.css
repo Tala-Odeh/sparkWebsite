@@ -10,10 +10,18 @@ body{background:linear-gradient(180deg,#f8f6f1 0,#f1eee7 38%,#f5f2eb 100%)}
 .hero{min-height:760px}
 .hero-copy{position:relative;z-index:2}
 .hero h1{max-width:760px}
+.hero-copy{padding-right:25px}
+.hero-proof{display:flex;flex-wrap:wrap;gap:8px;margin-top:38px}.hero-proof span{padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font:600 10px Manrope,sans-serif;text-transform:uppercase;letter-spacing:.06em}
 .hero-visual:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(244,124,0,.22),rgba(244,124,0,0) 70%);filter:blur(10px)}
 .spark-core{border-radius:38%;transform:rotate(5deg);box-shadow:0 0 0 18px rgba(244,124,0,.12),0 35px 80px rgba(23,23,23,.15)}
 .spark-core svg{transform:rotate(-5deg)}
 .float-card{border-radius:15px;border-color:rgba(255,255,255,.72);box-shadow:var(--shadow)}
+.consulting-panel{position:relative;z-index:2;width:min(100%,520px);min-height:560px;padding:30px;background:#fff;border:1px solid rgba(23,23,23,.1);border-radius:28px;box-shadow:0 35px 90px rgba(23,23,23,.13);display:flex;flex-direction:column;transform:rotate(1.5deg)}
+.panel-top{display:flex;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid var(--line);font:600 9px Manrope,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.panel-status{display:flex;align-items:center;gap:7px}.panel-status i{width:7px;height:7px;border-radius:50%;background:var(--lime)}
+.panel-heading{padding:40px 0 32px}.panel-heading small{display:block;margin-bottom:12px;color:var(--lime);font:700 10px Manrope,sans-serif;text-transform:uppercase;letter-spacing:.12em}.panel-heading strong{display:block;font:650 31px/1.18 Manrope,sans-serif;letter-spacing:-.04em}
+.advisory-steps{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line)}.advisory-steps div{padding:22px 12px;border-right:1px solid var(--line)}.advisory-steps div:last-child{border:0}.advisory-steps span,.advisory-steps small{display:block;color:var(--muted);font-size:9px}.advisory-steps b{display:block;margin:18px 0 5px;font:650 13px Manrope,sans-serif}
+.panel-outcome{position:relative;margin-top:auto;padding:24px;background:var(--ink);color:#fff;border-radius:18px}.panel-outcome span{display:block;color:var(--lime);font:700 9px Manrope,sans-serif;text-transform:uppercase;letter-spacing:.12em}.panel-outcome strong{display:block;margin-top:15px;font:600 19px/1.4 Manrope,sans-serif}.panel-outcome i{position:absolute;right:22px;top:22px;color:var(--lime);font-style:normal;font-size:20px}
+.panel-accent{position:absolute;z-index:3;right:-20px;bottom:42px;padding:12px 16px;background:var(--lime);color:var(--ink);border-radius:9px;font:800 9px Manrope,sans-serif;letter-spacing:.14em;transform:rotate(-3deg)}
 .statement{margin:0 14px;border-radius:var(--radius-lg);overflow:hidden}
 .services{padding-top:150px}
 .service-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -38,6 +46,7 @@ footer p,footer>a,footer .wrap>a:last-child{color:#66615b}
   .menu{width:42px;height:42px;padding:8px;border-radius:10px;background:rgba(23,32,24,.06)}
   .hero{padding-top:130px;grid-template-columns:1fr;grid-template-rows:auto auto auto}
   .hero-copy{text-align:center}.eyebrow,.hero-actions{justify-content:center}.hero-text{margin-inline:auto}
+  .hero-copy{padding-right:0}.hero-proof{justify-content:center}
   .hero-visual{min-height:520px}.hero-foot{grid-column:1;margin-top:0}
   .service-list{grid-template-columns:1fr}
   .service{min-height:0}
@@ -50,8 +59,7 @@ footer p,footer>a,footer .wrap>a:last-child{color:#66615b}
   .nav-actions{gap:6px}.language{display:block;padding:9px 8px;font-size:11px}
   .hero{padding-top:112px;min-height:auto}.hero h1{font-size:clamp(47px,15vw,66px);line-height:.96;margin:28px 0 22px}.hero-text{font-size:15px;line-height:1.65;padding-inline:5px}
   .hero-actions{flex-direction:column;gap:18px;margin-top:28px}.hero-actions .button{width:100%;max-width:330px}.text-link{padding:8px}
-  .hero-visual{min-height:420px;margin-top:12px}.hero-visual:before{width:280px;height:280px}.spark-core{width:125px;height:125px;border-radius:34px}.spark-core svg{width:45px}.orbit-one{width:260px;height:260px}.orbit-two{width:340px;height:340px}
-  .float-card{width:132px;padding:11px 12px}.float-card strong{margin-top:8px;font-size:12px}.float-card small{font-size:9px}.card-a{top:9%}.card-b{top:38%}.card-c{bottom:5%}.coordinate{display:none}
+  .hero-visual{min-height:530px;margin-top:34px}.hero-visual:before{width:280px;height:280px}.consulting-panel{min-height:500px;padding:21px;border-radius:21px;transform:none}.panel-heading{padding:28px 0 24px}.panel-heading strong{font-size:25px}.advisory-steps div{padding:18px 8px}.advisory-steps b{font-size:11px}.advisory-steps small{font-size:8px}.panel-outcome{padding:20px}.panel-outcome strong{font-size:16px}.panel-accent{right:-5px;bottom:28px}
   .hero-foot{padding:18px 2px 24px}.hero-foot p{font-size:9px}.scroll-cue{font-size:9px}
   .statement,.solutions,.cta,footer{margin-inline:7px;border-radius:24px}.statement{padding:74px 0}.statement-grid{text-align:start}.statement h2{font-size:36px;line-height:1.18}.statement-note{font-size:14px}
   .services{padding:85px 0}.section-head{margin-bottom:38px}.section-head h2,.about h2{font-size:39px;line-height:1.08}.section-head>p{font-size:14px}
@@ -62,7 +70,7 @@ footer p,footer>a,footer .wrap>a:last-child{color:#66615b}
   footer{padding:28px 0}footer .wrap{gap:18px}
 }
 
-@media(max-width:380px){.brand-logo{width:90px}.hero h1{font-size:45px}.float-card{width:118px}.float-card small{display:none}.statement h2,.section-head h2,.about h2{font-size:33px}.cta h2{font-size:37px}}
+@media(max-width:380px){.brand-logo{width:90px}.hero h1{font-size:43px}.hero-proof span{font-size:8px}.panel-heading strong{font-size:22px}.advisory-steps{grid-template-columns:1fr}.advisory-steps div{display:grid;grid-template-columns:28px 1fr;align-items:center;padding:10px;border-right:0;border-bottom:1px solid var(--line)}.advisory-steps div:last-child{border-bottom:0}.advisory-steps b{margin:0}.advisory-steps small{grid-column:2}.statement h2,.section-head h2,.about h2{font-size:33px}.cta h2{font-size:37px}}
 
 html[dir="rtl"] .hero-copy{text-align:right}
 @media(max-width:900px){html[dir="rtl"] .hero-copy{text-align:center}}
